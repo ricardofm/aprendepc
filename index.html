@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- call external js file -->
+
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href=""><img class="img-brand" src="images/aprendepc-brand.png" alt="" class="img-brand-nav"></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#footer" class="nav-link">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a href="#pricing" class="nav-link">Crear cuenta</a>
+        </li>
+        <li class="nav-item">
+          <a href="#login" class="nav-link">Iniciar Sesión</a>
+        </li>
+        <!-- Search form -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+          <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-10" viewBox="0 0 40 40">
+            <path
+              d="M15.643 31.285c8.64 0 15.642-7.003 15.642-15.642C31.285 7.003 24.282 0 15.643 0 7.003 0 0 7.003 0 15.643s7.003 15.642 15.643 15.642zm0-3.91c6.48 0 11.732-5.253 11.732-11.732 0-6.48-5.253-11.732-11.732-11.732-6.48 0-11.732 5.253-11.732 11.733s5.253 11.732 11.733 11.732zm12.605 4.192c-.914-.915-.92-2.393.004-3.315.916-.917 2.402-.917 3.315-.004l7.75 7.75c.913.914.918 2.392-.004 3.315-.917.916-2.403.916-3.316.003l-7.75-7.75zm-9.92-25.05c-5.26-1.213-10.51 2.067-11.725 7.328-.146.63.248 1.26.88 1.407.63.146 1.26-.248 1.406-.88.923-3.998 4.912-6.49 8.91-5.568.632.146 1.262-.247 1.408-.88.145-.63-.248-1.26-.88-1.406z"
+              fill-rule="evenodd" />
+          </symbol>
+          <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-2" viewBox="0 0 20 20">
+            <path d="M8.96 10L.52 1.562 0 1.042 1.04 0l.522.52L10 8.96 18.438.52l.52-.52L20 1.04l-.52.522L11.04 10l8.44 8.438.52.52L18.96 20l-.522-.52L10 11.04l-8.438 8.44-.52.52L0 18.96l.52-.522L8.96 10z" fill-rule="evenodd" />
+          </symbol>
+        </svg>
+
+        <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+          <div role="search" class="sbx-custom__wrapper">
+            <input type="search" name="search" placeholder="¿Qué buscas?" autocomplete="off" required="required" class="sbx-custom__input">
+            <button type="submit" title="Enviar búsqueda." class="sbx-custom__submit">
+              <svg role="img" aria-label="Search">
+                <use xlink:href="#sbx-icon-search-10"></use>
+              </svg>
+            </button>
+            <button type="reset" title="Limpia la búsqueda." class="sbx-custom__reset">
+              <svg role="img" aria-label="Limpiar">
+                <use xlink:href="#sbx-icon-clear-2"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <script type="text/javascript">
+          document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {
+            this.parentNode.querySelector('input').focus();
+          });
+        </script>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="py-1 bg-danger">Padding Y 1</div>
+  </div>
+
+  <!-- Jumbotron Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8">
+        <div id="title" class="jumbotron">
+          <h1 class="display-4">Porque aprender no cuesta nada</h1>
+          <p class="lead">Crea una cuenta y accede a nuestro foro donde podrás conectarte a otra dimensión.</p>
+          <hr class="my-4">
+          <p>Si quieres entrar ya a la info pulsa el botón.</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Aprende</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div id="login" class="login-box">
+          <img src="images/alberteinstein-face.png" class="avatar" alt="Avatar Image">
+          <h1>Login Here</h1>
+          <form>
+            <!-- USERNAME INPUT -->
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username">
+            <!-- PASSWORD INPUT -->
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password">
+            <input type="submit" value="Log In">
+            <a href="#">Lost your Password?</a><br>
+            <a href="#">Don't have An account?</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
