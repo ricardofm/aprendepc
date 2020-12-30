@@ -435,7 +435,10 @@ p.footer-bottom-text {
   }
 }
 @media (max-device-width: 352px){
-  .py-1   {
+  .py-1 {
+    background-color: #333333 !important;
+  }
+  .typewriter h1   {
     display: none;
   }
 }
