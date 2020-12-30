@@ -1,18 +1,26 @@
+body {
+  font-family: 'Audiowide', cursive;
+}
 .container-fluid {
   margin: 0;
   padding:0;
 }
 /* Navbar Section */
-.img-brand {
-  width: 9em;
-  height: 7.5em;
+.navbar {
+  background-color: #9DD1F1;
 }
 .nav-item {
   padding: 0 25px;
 }
-/*  */
-.navbar {
-  background-color: #508AA8;
+nav .navbar-nav li a{
+  color: #333333 !important;
+  }
+  nav .navbar-nav li a:hover{
+    color: white !important;
+    }
+.img-brand {
+  width: 9em;
+  height: 7.5em;
 }
 
 /* Search form */
@@ -192,6 +200,39 @@
   margin-right: 0;
 }
 /* Alert section */
+.typewriter-box {
+  text-align: center;
+  margin: auto;
+  width: 22em;
+}
+.typewriter {
+display: flex;
+justify-content: center;
+}
+.typewriter h1 {
+  color: #333333;
+  font-family: 'Audiowide', cursive;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .16em; /* Adjust as needed */
+  animation:
+    typing 3s steps(12, end),
+    blink-caret .7s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: #000 }
+}
 
 /*  Title Section*/
 .col-lg-8 {
@@ -280,4 +321,113 @@
 
 .login-box a:hover {
   color: #fff;
+}
+
+/* Footer section */
+footer {
+   font-family: 'Acme', sans-serif;
+   letter-spacing: 2px;
+}
+.footer-headings {
+  color: #fff;
+}
+.footer-content {
+  color: #999;
+  line-height: 25px;
+}
+footer h2 {
+  font-size: 18px;
+}
+.footer-top {
+  background: #111;
+  padding: 80px 0;
+}
+.segment-one h3 {
+  font-family: 'Henny Penny', cursive;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+.segment-two h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.segment-two h2:before {
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+.segment-two ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.segment-two ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 40px;
+}
+.segment-two ul li a {
+  color: #999;
+  text-decoration: none;
+}
+.segment-three h2 {
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+    margin-top: 15px;
+}
+.segment-three h2:before {
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+.segment-three a {
+  background: #494848;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+.segment-three a svg.svg-inline--fa {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 8px;
+
+}
+.segment-four h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.segment-four h2:before {
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+.segment-four form input[type=submit] {
+  background: #c65039;
+  border: none;
+  padding: 3px 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-bottom-text {
+  text-align: center;
+  background: #000;
+  line-height: 75px;
+}
+/* responsive css */
+@media only screen (min-width: 768px) and (max-width: 991px){
+  .md-mb-30 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen (max-width: 767px){
+  .sm-mb-30 {
+    margin-bottom: 30px;
+  }
+  .footer-top {
+    padding: 50px 0;
+  }
 }
