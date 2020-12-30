@@ -209,7 +209,6 @@ nav .navbar-nav li a{
   /* make cursor fit to content */
 display: inline-flex;
 justify-content: center;
-width: auto;
 }
 .typewriter h1 {
   color: #333333;
@@ -428,9 +427,13 @@ p.footer-bottom-text {
   }
 }
 @media only screen (max-width: 767px){
+  .typewriter {
+    width: 100%;
+  }
   .sm-mb-30 {
     margin-bottom: 30px;
   }
+
   .footer-top {
     padding: 50px 0;
   }
