@@ -15,7 +15,7 @@ body {
 nav .navbar-nav li a{
   color: #333333 !important;
   }
-  nav .navbar-nav li a:hover{
+nav .navbar-nav li a:hover{
     color: white !important;
     }
 .img-brand {
@@ -199,6 +199,7 @@ nav .navbar-nav li a{
 .row {
   margin-right: 0;
 }
+
 /* Alert section */
 .typewriter-box {
   text-align: center;
@@ -414,7 +415,7 @@ footer h2 {
   color: #fff;
   text-transform: uppercase;
 }
- #footer {
+ .copyrights {
   text-align: center;
   background: #000;
   line-height: 75px;
