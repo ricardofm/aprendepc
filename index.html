@@ -10,6 +10,8 @@
   <meta name="keywords" content="Computadoras, Laptop, CPU, RAM, Disco duro,
 Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
   <meta name="author" content="Ricardo J. Febles Matos">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/favicon_io/favicon.ico" />
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <!-- CSS Stylesheet -->
@@ -26,6 +28,7 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
   <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,7 +38,7 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href=""><img class="img-brand" src="images/aprendepc-brand.png" alt="" class="img-brand-nav"></a>
+    <a class="navbar-brand" href=""><img class="img-brand" src="images/aprendepc-brand.png" alt=""></a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -74,7 +77,7 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
             </button>
           </div>
         </form>
-        <script type="text/javascript">
+        <script>
           document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {
             this.parentNode.querySelector('input').focus();
           });
@@ -87,7 +90,7 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
   <div class="py-1 bg-danger ">
     <div class="typewriter-box">
       <div class="typewriter">
-        <h1>Bienvenidos.</h1>
+        <h1 class="welcome-alert">Bienvenidos.</h1>
       </div>
     </div>
   </div>
@@ -96,7 +99,7 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-8">
-        <div id="title" class="jumbotron">
+        <main id="title" class="jumbotron">
           <h1 class="display-4">Porque aprender no cuesta nada</h1>
           <p class="lead">Crea una cuenta y accede a nuestro foro donde podrás conectarte a otra dimensión.</p>
           <hr class="my-4">
@@ -104,12 +107,12 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
           <p class="lead">
             <a class="btn btn-primary btn-lg" href="#" role="button">Aprende</a>
           </p>
-        </div>
+        </main>
       </div>
 
       <!-- Login Section -->
       <div class="col-lg-4">
-        <div id="login" class="login-box">
+        <section id="login" class="login-box">
           <img src="images/alberteinstein-face.png" class="avatar" alt="Avatar Image">
           <h1>Login Here</h1>
           <form>
@@ -123,7 +126,7 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
             <a href="#">Lost your Password?</a><br>
             <a href="#">Don't have an account?</a>
           </form>
-        </div>
+        </section>
       </div>
     </div>
   </div>
@@ -167,10 +170,12 @@ Hard Drive, Keyboard, Modem, Monitor, Mouse, NIC, Printer">
         </div>
       </div>
     </div>
-    <small>
-      <p class="footer-bottom-text">All Right reserved by &copy;2020 Ricardo J. Febles Matos</p>
-    </small>
-  </footer>
+
+    <footer id="footer">
+      <small class="footer-bottom-text">All Right reserved by &copy;2020 Ricardo J. Febles Matos
+      </small>
+    </footer>
+
 </body>
 
 </html>
